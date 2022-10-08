@@ -1,0 +1,21 @@
+1.A. W jakim celu używa się klas abstrakcyjnych, a w jakim interfejsów?
+
+Klasa abstrakcyjna jest to klasa której obiekty nie mogą być tworzone,może być natomiast dziedziczona. Klasa abstrakcyjna może posiadać konstruktor 
+jak i destruktor, mogą być one jednak wywołane tylko przez klasy pochodne. Rządzą się prawie tymi samymi prawami, co zwykłe klasy — mogą dziedziczyć 
+po innych, można po nich dziedziczyć i mogą mieć normalne metody oraz implementować interfejsy.
+
+Interfejsy są pewnego rodzaju zbiorem sygnatur metod, bez ciała. Od klas abstrakcyjnych odróżniało je to, że nie mogły mieć ciała metod, dozwolone 
+było za to wielokrotne dziedziczenie. Java 8 wprowadza nowość w interfejsach, a dokładniej metody domyślne. Metody domyślne pozwalają zdefiniować ciało metody 
+w interfejsie. Co więcej, zachowujemy możliwość wielokrotnego dziedziczenia!
+
+Podsumowując, klasy abstrakcyjne mogą dziedziczyć tylko po jednej innej klasie, mogą dostarczać ciała metod i mogą określać metody o innej widoczności niż ‘public’. 
+Interfejsy z kolei mogą być dziedziczone wielokrotnie, mogą dostarczać domyślne ciała metod (ale nie mogą przesłaniać innych metod) i dotyczą tylko metod o widoczności 
+public.
+
+
+
+1.B. Czym różni się tablica od listy liniowej?
+Tablica jest to struktura danych, która w pamięci przechowywana jest jako cały blok. Z góry określami liczbę jej elementów.
+Lista jest strukturą danych, gdzi każdy element w pamięci, który znajduje się w liście przechowuje swoją wartość oraz pamięta adres kolejnego elementu. Nie musimy definiować
+jej rozmiaru. Dlatego tablic używamy gdy z góry znamy liczbę elementów i nie bedzie ona zmieniana. Innymi słowy jeśli często będziemy dodawać lub usuwać elementy powinniśmy 
+wybrać listę, jeśli jednak dane inicjalizujemy tylko raz lub rzadko, a wykonujemy wiele operacji odczytu powinniśmy wybrać tablicę.
